@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Sintony&display=swap');
+
+/* Estilo para elementos que utilizam a fonte */
+body {
+    font-family: 'Sintony', sans-serif; /* Use o nome da fonte corretamente */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    text-transform: uppercase;
+    color: #ffff;
+    z-index: 999;
+}
+
+.sapho-large {
+    color: #FFD700
+}
+
+.about-re-large {
+    color: #003366;
+}
+
+.doc-up-large {
+    color: #FFD700;
+}
+
+.dow-git-large {
+    color: #003366;
+}
+
+.cont-faq-large {
+    color: #FFD700;
+}
+
+.thanks {
+    color: #003366;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    text-align: center;
+    position: absolute;
+    width: 100%; /* Adicione esta linha */
+    height: 100vh;
+    letter-spacing: 2px;
+    overflow: hidden;
+    clip: rect(0, auto, auto, 0);
+    z-index: 1;
+}
+
+.section .fixed {
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.section .white {
+    color: #fff;
+}
+
+.section:nth-child(1) {
+    background-image: url('/background/bg_sapho_wave_line.svg');
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    z-index: 1;
+}
+
+.section:nth-child(1) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(2) {
+    background-image: url('/background/bg_abo_layered_waves.svg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #c2850a;
+    color: #fff;
+    top: 100vh;
+    z-index: 2;
+}
+
+.section:nth-child(2) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(3) {
+    background-image: url('/background/bg_dow_animated_shape.svg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0ac2;
+    color: #fff;
+    top: 200vh;
+    z-index: 3;
+}
+
+.section:nth-child(3) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(4) {
+    background-image: url('/background/bg_cont_sound_wave.svg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0a0a;
+    color: #fff;
+    top: 300vh;
+    z-index: 4;
+}
+
+.section:nth-child(4) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(5) {
+    background-image: url('/background/bg_git_circuit_primary.svg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0a0a;
+    color: #fff;
+    top: 400vh;
+    z-index: 5;
+}
+
+.section:nth-child(5) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(6) {
+    background-image: url('/background/bg_visit_domo.webp');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0a0a;
+    color: #fff;
+    top: 500vh;
+    z-index: 6;
+}
+
+.section:nth-child(6) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(7) {
+    background-image: url('/background/');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0a0a;
+    color: #fff;
+    top: 600vh;
+    z-index: 7;
+}
+
+.section:nth-child(7) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(8) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0a0a;
+    color: #fff;
+    top: 700vh;
+    z-index: 8;
+}
+
+.section:nth-child(8) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(9) {
+    box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+    background-color: #0a0a0a;
+    color: #fff;
+    top: 800vh;
+    z-index: 9;
+}
+
+.section:nth-child(9) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(10) {
+    background-color: #000;
+    color: #fff;
+    top: 900vh;
+    z-index: 10;
+}
+
+.section:nth-child(10) .fixed {
+    transform: translate(-50%, -50%);
+}
+
+.oop {
+    position: relative;
+    z-index: auto;
+    height: 10px;
+    background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.left-align {
+    text-align: left;
+}
+
+/* Estilos comuns para todas as seções */
+.section {
+    font-size: 16px; /* Tamanho de fonte padrão */
+    overflow: auto; /* Permitir rolagem quando necessário */
+}
+
+hr {
+    border: none; /* Remove a borda padrão */
+    height: 1px; /* Define a altura da linha */
+    background-color: #8a7388; /* Define a cor de fundo */
+    margin: 20px 0; /* Adiciona espaço acima e abaixo da linha */
+}
+
+/* Estilo para o contêiner do logo */
+.logo_container_memory {
+    position: fixed;
+    top: 10px; /* Distância do topo */
+    right: 100px; /* Distância da direita */
+    z-index: 9999; /* Z-index alto para garantir que fique acima de outros elementos */
+    width: 64px; /* Largura */
+    height: 64px; /* Altura */
+    transition: transform 0.3s ease; /* Transição suave da transformação */
+}
+
+/* Estilo para aumentar o tamanho do logo ao passar o mouse */
+.logo_container_memory:hover {
+    transform: scale(1.1); /* Aumentar em 10% ao passar o mouse */
+}
+
+/* Estilo para a imagem do logo */
+.logo_container_memory img {
+    width: 80%; /* Utiliza toda a largura do contêiner */
+    height: 80%; /* Utiliza toda a altura do contêiner */
+}
+
+.about-re-large ul li,
+.doc-up-large ul li,
+.dow-git-large ul li,
+.cont-faq-large ul li {
+    margin-bottom: 20px; /* Adiciona margem inferior entre os itens da lista */
+}
+
+.cont-faq-large a {
+    color: inherit; /* Isso fará com que o link herde a cor do texto pai */
+    text-decoration: none; /* Remova a decoração padrão do link */
+}
+
+.cont-faq-large a:hover {
+    text-decoration: underline; /* Adicione sublinhado quando o link estiver em hover */
+}
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* cor de fundo da área de rastreamento da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* cor do controle deslizante da barra de rolagem */
+  border-radius: 0px; /* borda arredondada do controle deslizante */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* cor do controle deslizante quando hover */
+}
+
+@media (max-height: 1200px) and (orientation: portrait) {
+    .section .fixed {
+        width: 90%; /* Defina a largura do elemento fixo */
+        font-size: 75%;
+    }
+    .link-text {
+        
+        font-size: 20px;
+    }
+    
+    .body{
+        font-size: 20px;
+    }
+    
+    .section:nth-child(1), .section:nth-child(2),
+    .section:nth-child(3), .section:nth-child(4),
+    .section:nth-child(5){
+        background-size: 400% auto; /* Amplia o tamanho do fundo horizontalmente */
+        background-position: center; /* Centraliza o fundo horizontalmente */
+    }
+    
+        hr {
+        border: none; /* Remove a borda padrão */
+        width: 500px; /* Define a altura da linha */
+        background-color: #8a7388; /* Define a cor de fundo */
+        margin: 0 auto; /* Alinha horizontalmente no centro */
+    }
+}
+
+/* Redefinir para dispositivos móveis */
+@media (max-height: 992px) and (orientation: portrait) {
+    .section .fixed {
+        width: 90%; /* Defina a largura do elemento fixo */
+        font-size: 75%;
+    }
+    
+    .link-text {
+        
+        font-size: 12px;
+    }
+
+    .section:nth-child(1), .section:nth-child(2),
+    .section:nth-child(3), .section:nth-child(4),
+    .section:nth-child(5){
+        background-size: 400% auto; /* Amplia o tamanho do fundo horizontalmente */
+        background-position: center; /* Centraliza o fundo horizontalmente */
+    }
+    
+        hr {
+        border: none; /* Remove a borda padrão */
+        width: 500px; /* Define a altura da linha */
+        background-color: #8a7388; /* Define a cor de fundo */
+        margin: 0 auto; /* Alinha horizontalmente no centro */
+    }
+}
+
+/* Redefinir para dispositivos móveis com tela estreita */
+@media (max-height: 680px) and (orientation: portrait) {
+    .section .fixed {
+        width: 90%; /* Defina a largura do elemento fixo */
+        font-size: 75%;
+    }
+    
+    .link-text {
+        
+        font-size: 15px;
+    }
+
+    
+    .section:nth-child(1), .section:nth-child(2),
+    .section:nth-child(3), .section:nth-child(4),
+    .section:nth-child(5){
+        background-size: 400% auto; /* Amplia o tamanho do fundo horizontalmente */
+        background-position: center; /* Centraliza o fundo horizontalmente */
+    }
+    
+        hr {
+        border: none; /* Remove a borda padrão */
+        width: 500px; /* Define a altura da linha */
+        background-color: #8a7388; /* Define a cor de fundo */
+        margin: 0 auto; /* Alinha horizontalmente no centro */
+    }
+}
+
+
+

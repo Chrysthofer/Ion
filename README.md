@@ -1,2 +1,2 @@
-# websapho-developer
-WEBSAPHO developer version
+# Web SAPHO
+SAPHO Website

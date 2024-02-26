@@ -1,0 +1,156 @@
+/* Reset de Estilos */
+@import 'https://fonts.googleapis.com/css?family=Sintony';
+
+@font-face {
+  font-display: swap; /* ou outra estratégia desejada */
+}
+
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sintony', sans-serif;
+    color: #fff; /* Cor do texto */
+    background-color: #000; /* Cor de fundo */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o vídeo de fundo */
+#video-background {
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 100%; /* Cobrir toda a largura */
+    height: auto; /* Ajustar a altura automaticamente */
+    object-fit: cover; /* Garante que o vídeo cubra toda a área designada */
+    z-index: 2; /* Coloca o vídeo atrás do conteúdo */
+}
+
+/* Estilos para o conteúdo */
+.content {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na horizontal */
+}
+
+h1 {
+    font-size: 36px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+h2 {
+    font-size: 24px; /* Tamanho da fonte dos subtítulos */
+    margin-top: 40px; /* Espaçamento superior */
+}
+
+p {
+    font-size: 18px; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+li {
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens da lista */
+}
+
+a {
+    color: #fff; /* Cor dos links */
+    text-decoration: underline; /* Sublinhado nos links */
+}
+
+a:hover {
+    color: #ccc; /* Cor dos links ao passar o mouse */
+}
+
+
+
+/* Seus estilos CSS existentes */
+
+.logo-link {
+    position: absolute;
+    top: 2%;
+    right: 5%; /* Ajusta a posição da logo no canto superior direito com base no tamanho do elemento pai */
+    z-index: 999; /* Garante que o ícone esteja acima de outros elementos */
+}
+
+
+
+.logo {
+    /* Outros estilos da logo */
+    width: 40px; /* Defina o tamanho inicial */
+    height: 40px; /* Mantenha a proporção */
+    transition: transform 0.3s ease; /* Adicione uma transição suave */
+    transform-origin: center; /* Define o ponto de transformação no centro */
+    position: fixed;
+}
+
+.logo:hover {
+    transform: scale(1.20); /* Ajusta a escala ao passar o mouse */
+}
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* cor de fundo da área de rastreamento da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* cor do controle deslizante da barra de rolagem */
+  border-radius: 0px; /* borda arredondada do controle deslizante */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* cor do controle deslizante quando hover */
+}
+
+
+@media screen and (max-width: 1200px) {
+    #video-background {
+        position: fixed;
+        bottom: 0;
+        left: 0%;
+        transform: translateX(-30%);
+        width: 90%; /* Reduz a largura do vídeo */
+        height: auto; /* Ajusta a altura automaticamente */
+        z-index: 2; /* Coloca o vídeo atrás do conteúdo */
+    }
+}
+
+/* Media queries para larguras de tela específicas */
+
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 30px; /* Ajusta o tamanho da fonte do título */
+    }
+    h2 {
+        font-size: 20px; /* Ajusta o tamanho da fonte dos subtítulos */
+    }
+    p {
+        font-size: 18px; /* Ajusta o tamanho da fonte dos parágrafos */
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 18px; /* Ajusta o tamanho da fonte do título */
+    }
+    h2 {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos subtítulos */
+    }
+    p {
+        font-size: 12px; /* Ajusta o tamanho da fonte dos parágrafos */
+    }
+}

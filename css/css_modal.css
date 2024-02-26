@@ -1,0 +1,314 @@
+/* styles.css */
+/* Variables */
+
+@font-face {
+  font-display: swap; /* ou outra estratégia desejada */
+}
+
+/* Mixins */
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* SCSS */
+
+
+.some-text {
+    @include absCenter;
+    max-width: 800px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    z-index: 999999999;
+}
+
+.pure {
+    color: #e75480;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    backdrop-filter: blur(4px); /* Aplica o efeito de desfoque ao fundo */
+}
+
+/* The url changes when the anchor is triggered and CSS can watch that */
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__content {
+    @include absCenter; /* Our mixin to center horizontally and vertically */
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+    color: #0033A0;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+     /*overflow: hidden; This will keep the images sharp corners from protruding past the border-radius */
+
+}
+
+.popup__text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.popup__content {
+    position: relative; /* Tornar o conteúdo do modal relativo */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    text-decoration: none;
+    transition: transform 0.5s; /* Transição para a animação */
+}
+
+.close-button:hover {
+    transform: rotate(180deg); /* Girar o X ao passar o mouse */
+}
+
+.close-button img {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: 30px;
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: auto; /* Centraliza a imagem horizontalmente */
+    transform-origin: center; /* Definir a origem da transformação no centro */
+}
+
+
+
+/* General Styles */
+button.primary {
+    display: inline-flex; /* Alteração para permitir que o ícone e o texto sejam exibidos na mesma linha */
+    align-items: center; /* Centralizar verticalmente o ícone e o texto */
+    font-size: 0.8rem;
+    background: rgb(var(--vs-primary) / 100%);
+    padding: 0px 5px;
+    border-radius: 17px;
+    transition: background-color 0.1s ease;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -10px rgb(var(--vs-primary) / 50%);
+}
+
+button.primary:hover {
+    box-shadow: 0 20px 20px -10px rgb(var(--vs-primary) / 50%);
+    transform: translateY(-5px);
+}
+
+.button-content {
+    display: flex; /* Alinhar ícone e texto horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title-icon-doc,
+.title-icon-dow,
+.title-icon-ab,
+.title-icon-git,
+.title-icon-con {
+    width: 30px;
+    height: 30px;
+}
+
+.popup__text a {
+    color: #0033A0; /* Cor do link */
+    text-decoration: underline; /* Adiciona sublinhado aos links */
+    
+}
+
+
+.popup__text a:hover {
+    color: #FFD700; /* Cor do link ao passar o mouse */
+}
+
+
+
+:root {
+    --vs-primary: 29 92 255;
+}
+
+.icon-git{
+    margin-left: 10px;
+    align-items: center;
+    width: 25px;
+    height: auto;
+}
+
+.heading-secondary {
+    text-align: center; /* Centers the text within its container */
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.popup__content {
+    position: relative; /* Mantenha o modal relativo */
+}
+
+.popup__text {
+    text-align: center;
+    margin-top: 20px; /* Ajuste o espaçamento entre a imagem e o texto conforme necessário */
+    z-index: 1; /* Coloque o texto abaixo das imagens */
+}
+
+.icon-undraw-thanks{
+    position: absolute;
+    top: 20%;
+    left: 20%;;
+    width: 15%;
+    height: auto;
+}
+
+.icon-undraw-welcome {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 15%;
+    height: auto;
+}
+
+@media (max-width: 580px) {
+    .icon-undraw-lang,
+    .icon-undraw-dow,
+    .icon-undraw-cont,
+    .icon-undraw-about,
+    .icon-undraw-doc {
+        display: none; /* Oculta os ícones quando a largura da tela for inferior a 580px */
+    }
+}
+
+/* Mantenha os ícones responsivos */
+.icon-undraw-lang,
+.icon-undraw-dow,
+.icon-undraw-cont,
+.icon-undraw-about,
+.icon-undraw-doc {
+    position: absolute;
+    z-index: 9999;
+    height: auto;
+}
+
+.icon-undraw-lang {
+    width: 20%;
+    margin-left: 40%;
+    transform: translateX(-50%);
+}
+
+.icon-undraw-dow {
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 15vw;
+}
+
+.icon-undraw-cont {
+    top: 15%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 15vw;
+}
+
+.icon-undraw-about {
+    top: 10%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 15vw;
+}
+
+.icon-undraw-doc {
+    top: 25%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 15vw;
+}
+
+
+
+
+/* Redefinir para dispositivos móveis com tela estreita */
+@media (max-height: 1200px) and (orientation: portrait) {
+    
+    .title-icon-doc,
+    .title-icon-dow,
+    .title-icon-ab,
+    .title-icon-git,
+    .title-icon-con {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+/* Redefinir para dispositivos móveis */
+@media (max-height: 992px) and (orientation: portrait) {
+    
+    .title-icon-doc,
+    .title-icon-dow,
+    .title-icon-ab,
+    .title-icon-git,
+    .title-icon-con {
+        width: 20px;
+        height: 20px;
+    }
+    
+        .popup__text{
+        
+        font-size: 1.0em;
+    }
+}
+
+/* Redefinir para dispositivos móveis com tela estreita */
+@media (max-height: 680px) and (orientation: portrait) {
+    
+    .title-icon-doc,
+    .title-icon-dow,
+    .title-icon-ab,
+    .title-icon-git,
+    .title-icon-con {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .popup__text{
+        
+        font-size: 1.0em;
+    }
+
+}

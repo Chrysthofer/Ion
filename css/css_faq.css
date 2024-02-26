@@ -1,0 +1,140 @@
+.faq-header {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.faq-content {
+  margin: 0 auto;
+  max-width: 100%; /* Defina uma largura máxima para o conteúdo */
+}
+
+.faq-question {
+  padding: 10px 0;
+}
+
+.panel-title {
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 12px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.panel:checked ~ .panel-content {
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 40px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+
+
+.panel-content a.link-style {
+  text-decoration: underline;
+  color: inherit; /* mantém a cor do texto */
+}
+
+.visitor-text {
+  font-size: 15px;
+  color: #333; /* Cor do texto */
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.visitor-counter {
+  font-size: 24px;
+  color: #0033A0; /* Cor do número */
+  font-weight: bold;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@media (max-width: 1200px) and (orientation: portrait) {
+    .panel-title {
+        font-size: 20px;
+    }
+    
+    .plus{
+        font-size: 40px;
+    }
+    
+    .faq-header{
+        width: 10%;
+    }
+
+}
+
+@media (max-width: 992px) and (orientation: portrait) {
+    .panel-title {
+        font-size: 18px;
+    }
+    
+    .plus{
+        font-size: 40px;
+    }
+    .faq-header{
+        width: 10%;
+    }
+}
+
+@media (max-width: 680px) and (orientation: portrait) {
+    .panel-title {
+        width: 90%; /* Defina a largura do elemento fixo */
+        font-size: 15px;
+    }
+    
+    .plus{
+        font-size: 25px;
+    }
+    
+    .faq-header{
+        width: 10%;
+    }
+    
+}

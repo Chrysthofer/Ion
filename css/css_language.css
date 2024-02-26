@@ -1,0 +1,110 @@
+@font-face {
+  format('woff2');
+  font-display: swap; /* ou outra estratégia desejada */
+}
+
+
+.content {
+    grid-column: 1; /* Conteúdo na primeira coluna */
+    display: grid;
+    place-items: center;
+    height: 100%; /* Garante que o conteúdo ocupe toda a altura */
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0.2em 0.3em; /* Reduzindo ainda mais o padding */
+    font-size: 0.65rem; /* Reduzindo ainda mais o tamanho da fonte */
+    color: #636269;
+    font-family: inherit;
+    background-color: #e0e5ec;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3861aa;
+}
+
+.multi-button {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px rgba(163, 177, 198, 0.6), -8px -8px 16px rgba(255, 255, 255, 0.5);
+}
+
+.multi-button button {
+    min-width: 4em; /* Reduzindo ainda mais a largura mínima */
+}
+
+.multi-button button:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.multi-button button:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.multi-button button + button {
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Seu CSS existente */
+
+.language-selector {
+    position: fixed;
+    top: 65%;
+    padding: 20px;
+   /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Sombra para o menu de idiomas */
+    display: none; /* Oculta o menu de idiomas por padrão */
+    opacity: 0; /* Começa com opacidade 0 para a transição */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adiciona uma transição suave para a opacidade e transformação */
+    z-index: 999998; /* Garante que o menu de idiomas esteja abaixo do botão de idioma */
+}
+
+.menu-link:hover .language-selector,
+.menu-link:focus .language-selector {
+    display: block; /* Mostra o menu de idiomas quando o mouse está sobre o texto "Idioma" ou quando está focado */
+    opacity: 1; /* Muda a opacidade para 1 para tornar visível */
+    transform: translateY(0); /* Reseta a posição para mostrar o menu de idiomas */
+}
+
+.language-option {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    margin-left: 10%;
+}
+
+
+ @media (min-width: 375px) {
+     
+    .menu-link{
+        font-size: 15px;
+    }
+
+
+}
+
+ @media (min-width: 415px) {
+     
+    .menu-link{
+        font-size: 20px;
+    }
+     
+
+
+}
+
+ @media (min-width: 680px) {
+     
+    .menu-link{
+        font-size: 20px;
+    }
+
+     
+}
