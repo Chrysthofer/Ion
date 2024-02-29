@@ -62,14 +62,13 @@ li {
 }
 
 a {
-    color: #fff; /* Cor dos links */
+    color: #bbdefb;; /* Cor dos links */
     text-decoration: underline; /* Sublinhado nos links */
 }
 
 a:hover {
-    color: #ccc; /* Cor dos links ao passar o mouse */
+    color: #82b1ff; /* Cor dos links ao passar o mouse */
 }
-
 
 
 /* Seus estilos CSS existentes */
@@ -77,7 +76,7 @@ a:hover {
 .logo-link {
     position: absolute;
     top: 2%;
-    right: 5%; /* Ajusta a posição da logo no canto superior direito com base no tamanho do elemento pai */
+    right: 10%; /* Ajusta a posição da logo no canto superior direito com base no tamanho do elemento pai */
     z-index: 999; /* Garante que o ícone esteja acima de outros elementos */
 }
 
@@ -113,7 +112,6 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* cor do controle deslizante quando hover */
 }
-
 
 @media screen and (max-width: 1200px) {
     #video-background {
@@ -154,3 +152,4 @@ a:hover {
         font-size: 12px; /* Ajusta o tamanho da fonte dos parágrafos */
     }
 }
+

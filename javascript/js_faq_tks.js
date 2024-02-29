@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
         accordionLink.addEventListener('click', function(event) {
             event.preventDefault();
             var answer = item.querySelector('.answer');
-            var arrowUp = item.querySelector('.ion-md-arrow-up');
-            var arrowDown = item.querySelector('.ion-md-arrow-down');
+            var arrowUp = item.querySelector('.icon'); // Seleciona o ícone para cima
+            var arrowDown = item.querySelector('.icon'); // Seleciona o ícone para baixo
             
             if (answer.style.maxHeight) {
                 answer.style.maxHeight = null;
-                arrowUp.style.display = 'none';
-                arrowDown.style.display = 'block';
+                arrowUp.classList.remove('ion-md-arrow-up'); // Remove a classe do ícone para cima
+                arrowDown.classList.add('ion-md-arrow-down'); // Adiciona a classe do ícone para baixo
             } else {
                 answer.style.maxHeight = answer.scrollHeight + 'px';
-                arrowUp.style.display = 'block';
-                arrowDown.style.display = 'none';
+                arrowUp.classList.add('ion-md-arrow-up'); // Adiciona a classe do ícone para cima
+                arrowDown.classList.remove('ion-md-arrow-down'); // Remove a classe do ícone para baixo
             }
         });
     });

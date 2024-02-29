@@ -383,5 +383,22 @@ hr {
     }
 }
 
+/* Adicione as regras de mídia queries para 1280x720 e 1366x768 */
+
+/* Para telas de 1280x720 */
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+    .section {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Para telas de 1366x768 */
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .section {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+    
+}
+
 
 

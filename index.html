@@ -33,12 +33,22 @@
         
         <link rel="stylesheet" href="/css/css_parallax.css">
         <link rel="stylesheet" href="/css/css_language.css">
+        <link rel="stylesheet" href="/css/css_sidebar.css">
         
-        <script src="/javascript/js_language.js"></script>
+        <link rel="stylesheet" href="/css/css_modal.css" async>
+        <link rel="stylesheet" href="/css/css_top.css" async>
+        <link rel="stylesheet" href="/css/css_faq.css" async>
+        
+        <script src="/javascript/js_language.js"></script>   
+        <script src="/javascript/js_sidebar.js"></script>
+    
+        <script src="/javascript/js_modal.js" defer></script>
+        <script src="javascript/js_top.js" defer></script>
+        <script src="/javascript/js_faq.js" defer></script>
 
     </head>
         <body>
-        <input type="checkbox" id="navcheck" title="menu">
+        <input type="checkbox" id="navcheck" title="menu" tabindex="0">
         <label for="navcheck" aria-hidden="true" title="menu">
             <span class="burger">
                 <span class="bar">
@@ -67,9 +77,10 @@
                 <span class="link-text" data-i18n="contact_title_01">Contact</span> <span class="link-text amp">&amp;</span> <span class="link-text" data-i18n="contact_title_02">FAQ</span>
             </a>
 
-            <a href="#main-content" class="menu-link">   
+            <a href="#main-content" class="menu-link" tabindex="0">   
                 <span class="link-text" data-i18n="language_title">Language</span>
             </a>
+
 
 
             <div id="language-selector" class="language-selector">  
@@ -84,7 +95,6 @@
         </nav>
 
              
-
 
     <main>
 
@@ -209,9 +219,8 @@
                     <h2 data-i18n="contact_subtitle">Contact Details</h2>
                     <ul>
                         <li class="left-align"><strong data-i18n="contact_overview_01">Support E-mail:</strong> <a href="mailto:contact@nipscern.com" target="_blank">contact@nipscern.com</a></li>
-                        <li class="left-align"><strong data-i18n="contact_overview_02">FAQ (Frequently Asked Questions):</strong></li>
-                    </ul>
-                    <p data-i18n="contact_overview_04">We look forward to hearing from you and collaborating for the ongoing success of the SAPHO project. Feel free to contact us anytime.</p>
+                        <li class="left-align"><strong data-i18n="contact_overview_02">FAQ (Frequently Asked Questions):</strong> <span data-i18n="contact_overview_04">We look forward to hearing from you and collaborating for the ongoing success of the SAPHO project. Feel free to contact us anytime.</span></li>
+                </ul>
 
                     <div class="faq-header"></div>
 
@@ -253,7 +262,7 @@
                 <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=7b032240f0c233b5b930d53fd5f261816f75f190' async></script>
                 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1141082/t/11" as></script>
             </div> -->
-            <img class="icon-undraw-thanks" src="icons/icon_undraw_astronaut.svg" alt="Thanks image first">
+            <img class="icon-undraw-thanks" src="icons/icon_undraw_astronaut.svg" alt="Thanks image first" loading="lazy">
             
             
             
@@ -262,14 +271,14 @@
             <div class="popup" id="aboutPopup">
                 <div class="popup__content">
                     <div class="content-container">
-                        <img class="icon-undraw-about" alt="Icon About" src="/icons/icon_undraw_blooming.svg">
+                        <img class="icon-undraw-about" alt="Icon About" src="/icons/icon_undraw_blooming.svg" loading="lazy">
                         <h2 class="heading-secondary" data-i18n="modal.about.title">About.</h2>
-                        <h3 class="heading-tertiary" data-i18n="about_notice">Important - read this notice.</h3>
+                        <h3 class="heading-tertiary" data-i18n="about_notice">Important &ndash; read this notice.</h3>
                         <p class="popup__text" data-i18n="modal.about.content">
                             All licenses and acknowledgments for third-party code can be found at:</p><p class="popup__text"> 
                             <a href="https://www.nipscern.com/license.html">license.html</a>
                         </p>
-                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close"></a>
+                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
                     </div>
                 </div>
             </div>
@@ -279,15 +288,15 @@
                 <div class="popup__content">
                     <div class="content-container">
                         <div class="content-container">
-                            <img class="icon-undraw-doc" alt="Icon Documentation" src="/icons/icon_undraw_code_typing.svg">
+                            <img class="icon-undraw-doc" alt="Icon Documentation" src="/icons/icon_undraw_code_typing.svg" loading="lazy">
                             <h2 class="heading-secondary" data-i18n="modal.documentation.title">Documentation.</h2>
-                            <h3 class="heading-tertiary" data-i18n="documentation_notice">Important - read this notice.</h3>
+                            <h3 class="heading-tertiary" data-i18n="documentation_notice">Important &ndash; read this notice.</h3>
                             <p class="popup__text" data-i18n="modal.documentation.content">
                                 You have downloaded the documentation of SAPHO. The file can be opened with the open-source PDF reader: </p>
                             <p class="popup__text">    
                             <a href="https://www.sumatrapdfreader.org/free-pdf-reader" target="_blank">SUMATRA</a></p>
                             
-                            <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close"></a>
+                            <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
                         </div>
                     </div>
                 </div>
@@ -297,18 +306,18 @@
             <div class="popup" id="dowPopup">
                 <div class="popup__content">
                     <div class="content-container">
-                        <img class="icon-undraw-dow" alt="Icon Documentation" src="/icons/icon_undraw_download.svg">
+                        <img class="icon-undraw-dow" alt="Icon Documentation" src="/icons/icon_undraw_download.svg" loading="lazy">
                         <h2 class="heading-secondary" data-i18n="modal.download.title">Download.</h2>
-                        <h3 class="heading-tertiary" data-i18n="download_notice">Important - read this notice.</h3>
+                        <h3 class="heading-tertiary" data-i18n="download_notice">Important &ndash; read this notice.</h3>
                         <p class="popup__text" data-i18n="modal.download.content">
                             Thank you for downloading SAPHO. The download will start shortly. Visit the
-                            <a href="https://github.com/nipscernlab/sapho" target="_blank">GitHub</a><img class="icon-git" src="icons/icon_modal_git.svg" alt="GitHub icon"> of the project for more information and download the
+                            <a href="https://github.com/nipscernlab/sapho" target="_blank">GitHub</a><img class="icon-git" src="icons/icon_modal_git.svg" alt="GitHub icon" loading="lazy"> of the project for more information and download the
                             <a href="https://www.nipscern.com/#documentation" target="_blank">documentation</a>.
                         </p>
                         
                         <p class="popup__text"> <a href="https://github.com/nipscernlab/sapho" target="_blank">GitHub</a></p>
                         
-                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close"></a>
+                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
                     </div>
                 </div>
             </div>
@@ -317,14 +326,14 @@
             <div class="popup" id="contPopup">
                 <div class="popup__content">
                     <div class="content-container">
-                        <img class="icon-undraw-cont" alt="Icon Documentation" src="/icons/icon_undraw_questions.svg">
+                        <img class="icon-undraw-cont" alt="Icon Documentation" src="/icons/icon_undraw_questions.svg" loading="lazy">
                         <h2 class="heading-secondary" data-i18n="modal.contact.title">Contact.</h2>
-                        <h3 class="heading-tertiary" data-i18n="contact_notice">Important - read this notice.</h3>
+                        <h3 class="heading-tertiary" data-i18n="contact_notice">Important &ndash; read this notice.</h3>
                         <p class="popup__text" data-i18n="modal.contact.content">
                             The email address was opened in your default application. If you have any questions, please write to: 
                         </p>
                         <p class="popup__text"><a href="mailto:chrysthofer@nipscern.com">chrysthofer@nipscern.com</a></p>
-                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close"></a>
+                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
                     </div>
                 </div>
             </div>
@@ -336,16 +345,5 @@
           <img src="/icons/icon_nav_wt.svg" alt="Back to top icon">
           <span data-i18n="back_to_top">Back to Top</span>
         </a>
-            
-        <link rel="stylesheet" href="/css/css_modal.css" async>
-        <link rel="stylesheet" href="/css/css_sidebar.css" async>
-        <link rel="stylesheet" href="/css/css_top.css" async>
-        <link rel="stylesheet" href="/css/css_faq.css" async>
-            
-        <script src="javascript/js_top.js" defer></script>
-        <script src="/javascript/js_modal.js" defer></script>
-        <script src="/javascript/js_sidebar.js" defer></script>
-        <script src="/javascript/js_faq.js" defer></script>
-
         </body>
     </html>

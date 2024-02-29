@@ -102,7 +102,7 @@ button.primary {
     display: inline-flex; /* Alteração para permitir que o ícone e o texto sejam exibidos na mesma linha */
     align-items: center; /* Centralizar verticalmente o ícone e o texto */
     font-size: 0.8rem;
-    background: rgb(var(--vs-primary) / 100%);
+    background: #007BFF;
     padding: 0px 5px;
     border-radius: 17px;
     transition: background-color 0.1s ease;
@@ -110,11 +110,12 @@ button.primary {
     transition: all 0.25s ease;
     border: 0;
     cursor: pointer;
-    box-shadow: 0 10px 20px -10px rgb(var(--vs-primary) / 50%);
+    box-shadow: 0 10px 20px -10px;
 }
 
 button.primary:hover {
-    box-shadow: 0 20px 20px -10px rgb(var(--vs-primary) / 50%);
+    background-color: #3861AA;
+    box-shadow: 0 20px 20px -10px;
     transform: translateY(-5px);
 }
 
