@@ -31,13 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (e[i].startsWith("mailto:")) {
                     window.location.href = e[i];
                 } else {
-                    var c = document.createElement("a");
-                    c.href = e[i];
                     if (i === 'aboutPopup') { // Check if the link is aboutPopup
-                        c.target = "_blank"; // Apply target="_blank" only for aboutPopup
+                        window.open(e[i], '_blank'); // Open aboutPopup link in a new tab
+                    } else {
+                        var c = document.createElement("a");
+                        c.href = e[i];
+                        c.download = "";
+                        c.click();
                     }
-                    c.download = "";
-                    c.click();
                 }
             }
         })
