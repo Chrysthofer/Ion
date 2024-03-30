@@ -1,148 +1,121 @@
+@font-face {
+    font-family: "Sintony", sans-serif;
+    font-display: swap;
+}
 *,
 *::before,
-*::after{
-  margin:0;
-  padding: 0;
-  box-sizing: inherit;
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
-
 html {
-  font-family: 'Sintony', sans-serif;
-  font-size: 10px;
-  box-sizing: border-box;
+    font-family: "Sintony", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
 }
-
-/*Section used for centering process*/
 section {
-  flex-direction: column;
-  width: 100%;
-  height: auto; /* Definindo altura automática */
-  min-height: 100vh; /* Garantindo que a seção tenha pelo menos a altura da janela de visualização */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  padding-bottom: 100px; /* Adicionando espaço para o rodapé */
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 100px;
 }
-
 .container {
-  width: 100%;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
-.accordion-item{
-  background-color: #000000;
-  border-radius: .4rem;
+.accordion-item {
+    background-color: #000000;
+    border-radius: 0.4rem;
 }
-
-.accordion-item hr{
-  border: 1px solid rgba(255, 255, 255, 0.5);
+.accordion-item hr {
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
-
-.accordion-link{
-  font-size: 1.6rem;
-  color: rgba(255,255,255,.8);
-  text-decoration: none;
-  background-color: #000000;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
+.accordion-link {
+    font-size: 1.6rem;
+    color: #ffd700;
+    text-decoration: none;
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
 }
-
-.accordion-link h3{
-  font-weight:500;
-  font-size: 20px;
+.accordion-link h3 {
+    font-weight: 500;
+    font-size: 20px;
 }
-
-.accordion-link i{
-  color: #e7d5ff;
-  padding: .5rem;
-  
+.accordion-link i {
+    color: #e7d5ff;
+    padding: 0.5rem;
 }
-
-.accordion-link ul{
-  display:flex;
-  align-items: flex-end;
-  list-style-type: none;
-  margin-left: 25px;
+.accordion-link ul {
+    display: flex;
+    align-items: flex-end;
+    list-style-type: none;
+    margin-left: 25px;
 }
-
-.accordion-link li{
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.4);
-  padding: 0 0 1px 5px;
+.accordion-link li {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0 0 1px 5px;
 }
-
-.accordion-link div{
-  display: flex;
+.accordion-link div {
+    display: flex;
 }
-
-.accordion-link .ion-md-arrow-down{
-  display: none;
+.accordion-link .ion-md-arrow-down {
+    display: none;
 }
-
-.answer{
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  background-color: #000;
-  transition: max-height 650ms;
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    transition: max-height 650ms;
 }
-
-
-
-.answer p{
-  color: #fff;
-  font-size: 15px;
-  padding: 2rem;
-  
+.answer p {
+    color: #fff;
+    font-size: 15px;
+    padding: 2rem;
 }
-
-.accordion-item:target .answer{
-  max-height: 20rem;
+.accordion-item:target .answer {
+    max-height: 20rem;
 }
-
-.accordion-item:target .accordion-link .ion-md-arrow-forward{
-  display: none
+.accordion-item:target .accordion-link .ion-md-arrow-forward {
+    display: none;
 }
-
-.accordion-item:target .accordion-link .ion-md-arrow-down{
-  display: block;
+.accordion-item:target .accordion-link .ion-md-arrow-down {
+    display: block;
 }
-
 a {
-  text-decoration: none;
-  color: #007bff;
+    text-decoration: none;
+    color: #007bff;
 }
-
-/* Estilos do rodapé */
 footer {
-  background-color: #000;
-  padding: 40px 0;
-  text-align: center;
-  width: 100%;
-  font-size: 12px;
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
 }
-
 footer a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #007bff;
-  margin: 0 10px; /* Ajuste a margem conforme necessário */
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
 }
-
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
-  footer {
-    display: grid;
-  }
+    footer {
+        display: grid;
+    }
 }
-
-
-
-

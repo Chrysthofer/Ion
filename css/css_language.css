@@ -54,9 +54,8 @@ button:hover {
 /* Seu CSS existente */
 
 .language-selector {
+    top: 100%;
     position: fixed;
-    top: 65%;
-    padding: 20px;
    /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Sombra para o menu de idiomas */
     display: none; /* Oculta o menu de idiomas por padrão */
     opacity: 0; /* Começa com opacidade 0 para a transição */
@@ -87,7 +86,6 @@ button:hover {
         font-size: 15px;
     }
 
-
 }
 
  @media (min-width: 415px) {
@@ -96,8 +94,6 @@ button:hover {
         font-size: 20px;
     }
      
-
-
 }
 
  @media (min-width: 680px) {
@@ -106,5 +102,4 @@ button:hover {
         font-size: 20px;
     }
 
-     
 }

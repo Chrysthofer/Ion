@@ -1,23 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var accordionItems = document.querySelectorAll('.accordion-item');
-
-    accordionItems.forEach(function(item) {
-        var accordionLink = item.querySelector('.accordion-link');
-        accordionLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            var answer = item.querySelector('.answer');
-            var arrowUp = item.querySelector('.icon'); // Seleciona o ícone para cima
-            var arrowDown = item.querySelector('.icon'); // Seleciona o ícone para baixo
-            
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-                arrowUp.classList.remove('ion-md-arrow-up'); // Remove a classe do ícone para cima
-                arrowDown.classList.add('ion-md-arrow-down'); // Adiciona a classe do ícone para baixo
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                arrowUp.classList.add('ion-md-arrow-up'); // Adiciona a classe do ícone para cima
-                arrowDown.classList.remove('ion-md-arrow-down'); // Remove a classe do ícone para baixo
-            }
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".accordion-item").forEach(function (e) {
+        e.querySelector(".accordion-link").addEventListener("click", function (o) {
+            o.preventDefault();
+            var r = e.querySelector(".answer"),
+                t = e.querySelector(".icon"),
+                n = e.querySelector(".icon");
+            r.style.maxHeight
+                ? ((r.style.maxHeight = null), t.classList.remove("ion-md-arrow-up"), n.classList.add("ion-md-arrow-down"))
+                : ((r.style.maxHeight = r.scrollHeight + "px"), t.classList.add("ion-md-arrow-up"), n.classList.remove("ion-md-arrow-down"));
         });
     });
 });

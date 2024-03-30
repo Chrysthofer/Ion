@@ -1,349 +1,326 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>    
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="keywords" lang="en" content="sapho, cern, Scalable Architecture Processor for Hardware Optimization">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="keywords" lang="pt" content="sapho, cern, Processador de Arquitetura Escalável para Otimização de Hardware">
+        <meta name="keywords" lang="en" content="sapho, cern, Scalable Architecture Processor for Hardware Optimization" />
 
-        <meta name="keywords" lang="fr" content="sapho, cern, Processeur d'Architecture Évolutive pour l'Optimisation du Matériel">
+        <meta name="keywords" lang="pt" content="sapho, cern, Processador de Arquitetura Escalável para Otimização de Hardware" />
 
-        <meta name="keywords" lang="no" content="sapho, cern, Skalerbar Arkitekturprosessor for Maskinvareoptimalisering">
+        <meta name="keywords" lang="fr" content="sapho, cern, Processeur d'Architecture Évolutive pour l'Optimisation du Matériel" />
 
-        <meta name="author" content="nipscern">
+        <meta name="keywords" lang="no" content="sapho, cern, Skalerbar Arkitekturprosessor for Maskinvareoptimalisering" />
 
-        <meta name="description" lang="en" content="Explore SAPHO, a Scalable Processor Optimized for the new CERN upgrade. Discover how SAPHO provides advanced solutions for hardware optimization. Learn more now!">
+        <meta name="author" content="nipscern" />
 
-        <meta name="description" lang="pt" content="Explore o SAPHO, um Processador Escalável Otimizado para a nova atualização do CERN. Descubra como o SAPHO fornece soluções avançadas para otimização de hardware. Saiba mais agora!">
+        <meta name="description" lang="en" content="Explore SAPHO, a Scalable Processor Optimized for the new CERN upgrade. Discover how SAPHO provides advanced solutions for hardware optimization. Learn more now!" />
 
-        <meta name="description" lang="fr" content="Découvrez SAPHO, un processeur évolutif optimisé pour la nouvelle mise à niveau du CERN. Découvrez comment SAPHO offre des solutions avancées pour l'optimisation du matériel. En savoir plus maintenant!">
+        <meta name="description" lang="pt" content="Explore o SAPHO, um Processador Escalável Otimizado para a nova atualização do CERN. Descubra como o SAPHO fornece soluções avançadas para otimização de hardware. Saiba mais agora!" />
 
-        <meta name="description" lang="no" content="Utforsk SAPHO, en skalerbar prosessor optimalisert for den nye oppgraderingen av CERN. Oppdag hvordan SAPHO gir avanserte løsninger for maskinvareoptimalisering. Lær mer nå!">
-        
+        <meta
+            name="description"
+            lang="fr"
+            content="Découvrez SAPHO, un processeur évolutif optimisé pour la nouvelle mise à niveau du CERN. Découvrez comment SAPHO offre des solutions avancées pour l'optimisation du matériel. En savoir plus maintenant!"
+        />
+
+        <meta name="description" lang="no" content="Utforsk SAPHO, en skalerbar prosessor optimalisert for den nye oppgraderingen av CERN. Oppdag hvordan SAPHO gir avanserte løsninger for maskinvareoptimalisering. Lær mer nå!" />
+
+        <meta property="og:title" content="SAPHO: Scalable Architecture Processor for Hardware Optimization | CERN Lab" />
+
+        <meta property="og:description" content="Explore SAPHO, a Scalable Processor Optimized for the new CERN upgrade. Discover how SAPHO provides advanced solutions for hardware optimization. Learn more now!" />
+
+        <meta property="og:image" content="/icons/icon_site_memory_128.svg" />
+
+        <meta property="og:url" content="https://nipscern.com" />
+
+        <meta property="og:type" content="website" />
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-WV6QJWVX");
+        </script>
+        <!-- End Google Tag Manager -->
+
         <title data-i18n="site_title">SAPHO: Scalable Architecture Processor for Hardware Optimization | CERN Lab</title>
-        
-        <link rel="icon" href="/icons/icon_site_memory_128.svg" type="image/svg+xml" sizes="128x128">
-        <link rel="icon" href="/icons/icon_site_memory_64.svg" type="image/svg+xml" sizes="64x64">
-        <link rel="icon" href="/icons/icon_site_memory_32.svg" type="image/svg+xml" sizes="32x32">
-        <link rel="icon" href="/icons/icon_site_memory_16.svg" type="image/svg+xml" sizes="16x16">
 
-        
-        <link rel="stylesheet" href="/css/css_parallax.css">
-        <link rel="stylesheet" href="/css/css_language.css">
-        <link rel="stylesheet" href="/css/css_sidebar.css">
-        
-        <link rel="stylesheet" href="/css/css_modal.css" async>
-        <link rel="stylesheet" href="/css/css_top.css" async>
-        <link rel="stylesheet" href="/css/css_faq.css" async>
-        
-        <script src="/javascript/js_language.js"></script>   
+        <link rel="icon" href="/icons/icon_site_memory_128.svg" type="image/svg+xml" sizes="128x128" />
+        <link rel="icon" href="/icons/icon_site_memory_64.svg" type="image/svg+xml" sizes="64x64" />
+        <link rel="icon" href="/icons/icon_site_memory_32.svg" type="image/svg+xml" sizes="32x32" />
+        <link rel="icon" href="/icons/icon_site_memory_16.svg" type="image/svg+xml" sizes="16x16" />
+
+        <link rel="stylesheet" href="/css/css_parallax.css" />
+        <link rel="stylesheet" href="/css/css_language.css" />
+        <link rel="stylesheet" href="/css/css_sidebar.css" />
+        <link rel="stylesheet" href="/css/css_footer.css" />
+
+        <link rel="stylesheet" href="/css/css_modal.css" async />
+        <link rel="stylesheet" href="/css/css_faq.css" async />
+
+        <script src="/javascript/js_language.js"></script>
         <script src="/javascript/js_sidebar.js"></script>
-    
+        <script type="application/ld+json" src="/json/json_organization"></script>
+
         <script src="/javascript/js_modal.js" defer></script>
         <script src="javascript/js_top.js" defer></script>
         <script src="/javascript/js_faq.js" defer></script>
-
     </head>
-        <body>
-        <input type="checkbox" id="navcheck" title="menu" tabindex="0">
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV6QJWVX" height="0" width="0" style="display: none; visibility: hidden;"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div id="skip"><a href="main-content">Skip Content</a></div>
+        <div id="skip"><a href="#main-content">Skip Content</a></div>
+        <input type="checkbox" id="navcheck" title="menu" tabindex="0" />
         <label for="navcheck" aria-hidden="true" title="menu">
             <span class="burger">
-                <span class="bar">
-                    <span class="visuallyhidden">Menu</span>
-                </span>
+                <span class="bar"><span class="visuallyhidden">Menu</span></span>
             </span>
         </label>
-
         <nav id="menu">
             <a href="#about" class="menu-link" tabindex="0">
-                <span class="link-text" data-i18n="about_title_01">About</span>
-                <span class="link-text amp" data-i18n="amp">&amp;</span>
-                <span class="link-text" data-i18n="about_title_02">Resources</span>
+                <span class="link-text" data-i18n="about_title_01">About</span> <span class="link-text amp" data-i18n="amp">&amp;</span> <span class="link-text" data-i18n="about_title_02">Resources</span>
             </a>
-
-
-            <a href="#documentation" class="menu-link" tabindex="0">   
+            <a href="#documentation" class="menu-link" tabindex="0">
                 <span class="link-text" data-i18n="documentation_title_01">Documentation</span> <span class="link-text amp">&amp;</span> <span class="link-text" data-i18n="documentation_title_02">Updates</span>
             </a>
-
-            <a id="language-link" href="#download" class="menu-link" tabindex="0"> 
+            <a id="language-link" href="#download" class="menu-link" tabindex="0">
                 <span class="link-text" data-i18n="download_title_01">Download</span> <span class="link-text amp">&amp;</span> <span class="link-text" data-i18n="download_title_02">GitHub</span>
-            </a>    
-
-            <a href="#contact" class="menu-link" tabindex="0">
-                <span class="link-text" data-i18n="contact_title_01">Contact</span> <span class="link-text amp">&amp;</span> <span class="link-text" data-i18n="contact_title_02">FAQ</span>
             </a>
-
-            <a href="#main-content" class="menu-link" tabindex="0">   
-                <span class="link-text" data-i18n="language_title">Language</span>
-            </a>
-
-
-
-            <div id="language-selector" class="language-selector">  
-                <div class="multi-button">
-                    <button><img class="language-option" data-lang="pt" src="/icons/icon_flag_br.svg" alt="Português"></button>
-                    <button><img class="language-option" data-lang="en" src="/icons/icon_flag_gb.svg" alt="English"></button>
-                    <button><img class="language-option" data-lang="fr" src="/icons/icon_flag_fr.svg" alt="Français"></button>
-                    <button><img class="language-option" data-lang="no" src="/icons/icon_flag_no.svg" alt="Norsk"></button>
+            <a href="#contact" class="menu-link" tabindex="0"><span class="link-text" data-i18n="contact_title_01">Contact</span> <span class="link-text amp">&amp;</span> <span class="link-text" data-i18n="contact_title_02">FAQ</span></a>
+            <a href="#language" class="menu-link" tabindex="0"><span class="link-text" data-i18n="language_title">Language</span>
+            <div id="language-selector" class="language-selector">
+                    <div class="multi-button">
+                        <button><img class="language-option" data-lang="pt" src="/icons/icon_flag_br.svg" alt="Português" /></button><button><img class="language-option" data-lang="en" src="/icons/icon_flag_gb.svg" alt="English" /></button>
+                        <button><img class="language-option" data-lang="fr" src="/icons/icon_flag_fr.svg" alt="Français" /></button><button><img class="language-option" data-lang="no" src="/icons/icon_flag_no.svg" alt="Norsk" /></button>
+                    </div>
                 </div>
-            </div>
-                <!-- <img class="icon-undraw-lang" alt="Icon Language" src="/icons/icon_undraw_typing.svg"> -->
+            </a>
         </nav>
-
-             
-
-    <main>
-
-        <div id="sapho" class="section"> 
-            <div class="oop"></div>
-            <div class="fixed">
-                <h1 class="sapho-large" data-i18n="header_title">SAPHO</h1>
-                <p class="sapho-large" data-i18n="header_subtitle">Scalable Architecture Processor for Hardware Optimization</p>
-            </div>
-        </div>
-        
-        
-        
-    <div id="about" class="section">
-            <div class="about-re-large">
+        <main id="main-content">
+            <div id="sapho" class="section">
+                <div class="oop"></div>
                 <div class="fixed">
-                    <h1 data-i18n="about_title">ABOUT &amp; RESOURCES</h1>
-                    <button id="aboutButton" class="primary">
-                        <a href="#aboutPopup">
-                            <img class="title-icon-ab" src="/icons/icon_open_am.svg" alt="About and Resources button">
-                        </a>
-                    </button>
-                    <p data-i18n="about_content">
-                         Welcome to the SAPHO - Scalable Architecture Processor for Hardware Optimization page! We are a team from the Signal Processing and Instrumentation Center at the UFJF Engineering School dedicated to the development of SAPHO, an open-source soft-core processor.
-                    </p>
-                    <hr>
-                    <h2 data-i18n="about_subtitle">Available Resources</h2>
-                    <ul>
-                        <li class="left-align" data-i18n="[html]about_overview_01">
-                            <strong><span class="overview-title" data-i18n="about_overview_01">Scalable Architecture:</span></strong>
-                            <span class="overview-text" data-i18n="about_overview_02">SAPHO utilizes a scalable architecture that automatically allocates the necessary hardware resources during compilation.</span>
-                        </li>
-                        <li class="left-align" data-i18n="[html]about_overview_03">
-                            <strong><span class="overview-title" data-i18n="about_overview_03">Development Tools:</span></strong>
-                            <span class="overview-text" data-i18n="about_overview_04">We offer a comprehensive IDE for SAPHO programming, along with C+- and Assembly compilers specifically developed for the processor.</span>
-                        </li>
-                        <li class="left-align" data-i18n="[html]about_overview_05">
-                            <strong><span class="overview-title" data-i18n="about_overview_05">Technical Documentation:</span></strong>
-                            <span class="overview-text" data-i18n="about_overview_06">Explore user manuals, reference guides, and tutorials to help you understand and use SAPHO in your projects.</span>
-                        </li>
-                    </ul>    
-            </div>
-        </div>
-    </div>
-
-
-    <div id="documentation" class="section">
-            <div class="doc-up-large">
-                <div class="fixed">    
-                    <h1 data-i18n="documentation_title">DOCUMENTATION &amp; UPDATES</h1>
-                    <button id="docButton" class="primary">
-                        <a href="#docPopup">
-                            <img class="title-icon-doc" src="/icons/icon_dow_link_am.svg" alt="Documentation Updates">
-                        </a>
-                    </button>
-                    <p data-i18n="documentation_content">
-                        The complete documentation of SAPHO is available for on-line consultation. It includes detailed information about the processor architecture, the developed circuits, the necessary software tools for its operation, as well as tutorials and examples to assist in project development with SAPHO.
-                    </p>
-                    <hr>
-                    <h2 data-i18n="documentation_subtitle">Content</h2>
-                    <ul>
-                        <li class="left-align" data-i18n="[html]documentation_overview_01">
-                            <strong><span class="overview-title" data-i18n="documentation_overview_01">User Manuals:</span></strong>
-                            <span class="overview-text" data-i18n="documentation_overview_02">A complete guide for programming and configuring SAPHO.</span>
-                        </li>
-                        <li class="left-align" data-i18n="[html]documentation_overview_03">
-                            <strong><span class="overview-title" data-i18n="documentation_overview_03">Compilation Guide:</span></strong>
-                            <span class="overview-text" data-i18n="documentation_overview_04">Step-by-step instructions for compiling programs and generating Verilog code for the processor.</span>
-                        </li>
-                        <li class="left-align" data-i18n="[html]documentation_overview_05">
-                            <strong><span class="overview-title" data-i18n="documentation_overview_05">Release Notes:</span></strong>
-                            <span class="overview-text" data-i18n="documentation_overview_06">Stay informed about the latest updates and enhancements implemented in SAPHO.</span>
-                        </li>
-                    </ul>
-                </div>
-          </div>  
-    </div>
-
-
-    <div id="download" class="section">
-        <div class="dow-git-large">
-            <div class="fixed">
-                <h1 data-i18n="download_title">Download &amp; GitHub</h1>
-                <button id="downloadButton" class="primary">
-                    <a href="#dowPopup">
-                        <img class="title-icon-dow" src="/icons/icon_dow_link_am.svg" alt="Download and GitHub button">
-                    </a>
-                </button>
-                <p data-i18n="download_content">
-                    Download SAPHO and access its GitHub repository to contribute and follow the project's development!
-                </p>
-                <hr>
-                <h2 data-i18n="download_subtitle">Content Available</h2>
-                <ul>
-                    <li class="left-align" data-i18n="[html]download_overview_01">
-                        <strong><span class="overview-title" data-i18n="download_overview_01">SAPHO Download:</span></strong>
-                        <span class="overview-text" data-i18n="download_overview_02">Download the latest version of SAPHO to start using it in your projects.</span>
-                    </li>
-                    <li class="left-align" data-i18n="[html]download_overview_03">
-                        <strong><span class="overview-title" data-i18n="download_overview_03">GitHub Repository:</span></strong>
-                        <span class="overview-text" data-i18n="download_overview_04">Access the complete source code, application examples, and contribute to the development of SAPHO through GitHub.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="contact" class="section">
-        <div class="cont-faq-large">
-            <div class="fixed">
-                <h1 data-i18n="contact_title">CONTACT &amp; FAQ</h1>
-                    <button class="primary" id="contactButton">
-                        <a href="#contPopup">
-                            <img class="title-icon-con" src="/icons/icon_open_am.svg" alt="E-mail to contact">
-                        </a>
-                    </button>
-                    <p data-i18n="contact_content">
-                       Need help or have questions about SAPHO? Get in touch with us!
-                    </p>
-                    <hr>
-                    <h2 data-i18n="contact_subtitle">Contact Details</h2>
-                    <ul>
-                        <li class="left-align"><strong data-i18n="contact_overview_01">Support E-mail:</strong> <a href="mailto:contact@nipscern.com" target="_blank">contact@nipscern.com</a></li>
-                        <li class="left-align"><strong data-i18n="contact_overview_02">FAQ (Frequently Asked Questions):</strong> <span data-i18n="contact_overview_04">We look forward to hearing from you and collaborating for the ongoing success of the SAPHO project. Feel free to contact us anytime.</span></li>
-                </ul>
-
-                    <div class="faq-header"></div>
-
-                    <div class="faq-content">
-                      <div class="faq-question">
-                        <input id="q1" type="checkbox" class="panel">
-                        <div class="plus">+</div>
-                        <label for="q1" class="panel-title" data-i18n="faq_title_01">What is CERN?</label>
-                        <div class="panel-content"  data-i18n="faq_answer_01"> CERN, the European Organization for Nuclear Research, is the world's largest particle physics laboratory. It operates the Large Hadron Collider (LHC), a massive particle accelerator used to study the fundamental particles and forces of the universe.</div>
-                    </div>
-
-                     <div class="faq-question">
-                        <input id="q2" type="checkbox" class="panel">
-                        <div class="plus">+</div>
-                        <label for="q2" class="panel-title" data-i18n="faq_title_02">Where can I study about CERN?</label>
-                        <div class="panel-content" data-i18n="faq_answer_02">You can study about CERN through their official publications, <a href="https://home.cern/" target="_blank" class="link-style">website</a>, scientific journals, <a href="https://github.com/cernopendata/opendata.cern.ch" target="_blank" class="link-style">GitHub</a> documentaries, <a href="https://en.wikipedia.org/wiki/CERN" target="_blank" class="link-style">wikipedia</a>, etc.</div>
-                     </div>
-
-                    <div class="faq-question">
-                        <input id="q3" type="checkbox" class="panel">
-                        <div class="plus">+</div>
-                        <label for="q3" class="panel-title" data-i18n="faq_title_03">What is the main problem that SAPHO solves?</label>
-                        <div class="panel-content"  data-i18n="faq_answer_03">The main problem that SAPHO solves is the efficient design and implementation of custom processors for signal processing applications.</div>
-                    </div>
+                    <h1 class="sapho-large" data-i18n="header_title">SAPHO</h1>
+                    <p class="sapho-large" data-i18n="header_subtitle">Scalable Architecture Processor for Hardware Optimization</p>
                 </div>
             </div>
-        </div>
-    </div>
-        
-        <div id="thanks" class="section">
-            <p class="thanks"  data-i18n="thanks_message">Thanks for Visiting</p>
-            
-            <p class="visitor-text" data-i18n="thanks_visitor">You are visitor number:<br></p>
-            <p class="visitor-counter"><span id="viewsCounter" >0</span></p>
-
-    <!--
-            <div id="freevisitorcounter" class="visitor-counter">
-                <a href='http://www.freevisitorcounters.com' target="_blank" style="text-decoration: none; color: #fff; font-family: Arial, sans-serif; font-size: 14px;"></a>
-                <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=7b032240f0c233b5b930d53fd5f261816f75f190' async></script>
-                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1141082/t/11" as></script>
-            </div> -->
-            <img class="icon-undraw-thanks" src="icons/icon_undraw_astronaut.svg" alt="Thanks image first" loading="lazy">
-            
-            
-            
-        </div>
-
-            <div class="popup" id="aboutPopup">
-                <div class="popup__content">
-                    <div class="content-container">
-                        <img class="icon-undraw-about" alt="Icon About" src="/icons/icon_undraw_blooming.svg" loading="lazy">
-                        <h2 class="heading-secondary" data-i18n="modal.about.title">About.</h2>
-                        <h3 class="heading-tertiary" data-i18n="about_notice">Important &ndash; read this notice.</h3>
-                        <p class="popup__text" data-i18n="modal.about.content">
-                            All licenses and acknowledgments for third-party code can be found at:</p><p class="popup__text"> 
-                            <a href="https://www.nipscern.com/license.html">license.html</a>
+            <div id="about" class="section">
+                <div class="about-re-large">
+                    <div class="fixed">
+                        <h1 data-i18n="about_title">ABOUT &amp; RESOURCES</h1>
+                        <button id="aboutButton" class="primary">
+                            <a href="#aboutPopup"><img class="title-icon-ab" src="/icons/icon_open_am.svg" alt="About and Resources button" /></a>
+                        </button>
+                        <p data-i18n="about_content">
+                            Welcome to the SAPHO - Scalable Architecture Processor for Hardware Optimization page! We are a team from the Signal Processing and Instrumentation Center at the UFJF Engineering School dedicated to the
+                            development of SAPHO, an open-source soft-core processor.
                         </p>
-                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
+                        <hr />
+                        <h2 data-i18n="about_subtitle">Available Resources</h2>
+                        <ul>
+                            <li class="left-align" data-i18n="[html]about_overview_01">
+                                <strong><span class="overview-title" data-i18n="about_overview_01">Scalable Architecture:</span></strong>
+                                <span class="overview-text" data-i18n="about_overview_02">SAPHO utilizes a scalable architecture that automatically allocates the necessary hardware resources during compilation.</span>
+                            </li>
+                            <li class="left-align" data-i18n="[html]about_overview_03">
+                                <strong><span class="overview-title" data-i18n="about_overview_03">Development Tools:</span></strong>
+                                <span class="overview-text" data-i18n="about_overview_04">We offer a comprehensive IDE for SAPHO programming, along with C+- and Assembly compilers specifically developed for the processor.</span>
+                            </li>
+                            <li class="left-align" data-i18n="[html]about_overview_05">
+                                <strong><span class="overview-title" data-i18n="about_overview_05">Technical Documentation:</span></strong>
+                                <span class="overview-text" data-i18n="about_overview_06">Explore user manuals, reference guides, and tutorials to help you understand and use SAPHO in your projects.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-
-            <div class="popup" id="docPopup">
-                <div class="popup__content">
-                    <div class="content-container">
-                        <div class="content-container">
-                            <img class="icon-undraw-doc" alt="Icon Documentation" src="/icons/icon_undraw_code_typing.svg" loading="lazy">
-                            <h2 class="heading-secondary" data-i18n="modal.documentation.title">Documentation.</h2>
-                            <h3 class="heading-tertiary" data-i18n="documentation_notice">Important &ndash; read this notice.</h3>
-                            <p class="popup__text" data-i18n="modal.documentation.content">
-                                You have downloaded the documentation of SAPHO. The file can be opened with the open-source PDF reader: </p>
-                            <p class="popup__text">    
-                            <a href="https://www.sumatrapdfreader.org/free-pdf-reader" target="_blank">SUMATRA</a></p>
-                            
-                            <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
+            <div id="documentation" class="section">
+                <div class="doc-up-large">
+                    <div class="fixed">
+                        <h1 data-i18n="documentation_title">DOCUMENTATION &amp; UPDATES</h1>
+                        <button id="docButton" class="primary">
+                            <a href="#docPopup"><img class="title-icon-doc" src="/icons/icon_dow_link_am.svg" alt="Documentation Updates" /></a>
+                        </button>
+                        <p data-i18n="documentation_content">
+                            The complete documentation of SAPHO is available for on-line consultation. It includes detailed information about the processor architecture, the developed circuits, the necessary software tools for its
+                            operation, as well as tutorials and examples to assist in project development with SAPHO.
+                        </p>
+                        <hr />
+                        <h2 data-i18n="documentation_subtitle">Content</h2>
+                        <ul>
+                            <li class="left-align" data-i18n="[html]documentation_overview_01">
+                                <strong><span class="overview-title" data-i18n="documentation_overview_01">User Manuals:</span></strong>
+                                <span class="overview-text" data-i18n="documentation_overview_02">A complete guide for programming and configuring SAPHO.</span>
+                            </li>
+                            <li class="left-align" data-i18n="[html]documentation_overview_03">
+                                <strong><span class="overview-title" data-i18n="documentation_overview_03">Compilation Guide:</span></strong>
+                                <span class="overview-text" data-i18n="documentation_overview_04">Step-by-step instructions for compiling programs and generating Verilog code for the processor.</span>
+                            </li>
+                            <li class="left-align" data-i18n="[html]documentation_overview_05">
+                                <strong><span class="overview-title" data-i18n="documentation_overview_05">Release Notes:</span></strong>
+                                <span class="overview-text" data-i18n="documentation_overview_06">Stay informed about the latest updates and enhancements implemented in SAPHO.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="download" class="section">
+                <div class="dow-git-large">
+                    <div class="fixed">
+                        <h1 data-i18n="download_title">Download &amp; GitHub</h1>
+                        <button id="downloadButton" class="primary">
+                            <a href="#dowPopup"><img class="title-icon-dow" src="/icons/icon_dow_link_am.svg" alt="Download and GitHub button" /></a>
+                        </button>
+                        <p data-i18n="download_content">Download SAPHO and access its GitHub repository to contribute and follow the project's development!</p>
+                        <hr />
+                        <h2 data-i18n="download_subtitle">Content Available</h2>
+                        <ul>
+                            <li class="left-align" data-i18n="[html]download_overview_01">
+                                <strong><span class="overview-title" data-i18n="download_overview_01">SAPHO Download:</span></strong>
+                                <span class="overview-text" data-i18n="download_overview_02">Download the latest version of SAPHO to start using it in your projects.</span>
+                            </li>
+                            <li class="left-align" data-i18n="[html]download_overview_03">
+                                <strong><span class="overview-title" data-i18n="download_overview_03">GitHub Repository:</span></strong>
+                                <span class="overview-text" data-i18n="download_overview_04">Access the complete source code, application examples, and contribute to the development of SAPHO through GitHub.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="section">
+                <div class="cont-faq-large">
+                    <div class="fixed">
+                        <h1 data-i18n="contact_title">CONTACT &amp; FAQ</h1>
+                        <button class="primary" id="contactButton">
+                            <a href="#contPopup"><img class="title-icon-con" src="/icons/icon_open_am.svg" alt="E-mail to contact" /></a>
+                        </button>
+                        <p data-i18n="contact_content">Need help or have questions about SAPHO? Get in touch with us!</p>
+                        <hr />
+                        <h2 data-i18n="contact_subtitle">Contact Details</h2>
+                        <ul>
+                            <li class="left-align"><strong data-i18n="contact_overview_01">Support E-mail:</strong> <a href="mailto:contact@nipscern.com" target="_blank">contact@nipscern.com</a></li>
+                            <li class="left-align">
+                                <strong data-i18n="contact_overview_02">FAQ (Frequently Asked Questions):</strong>
+                                <span data-i18n="contact_overview_04">We look forward to hearing from you and collaborating for the ongoing success of the SAPHO project. Feel free to contact us anytime.</span>
+                            </li>
+                        </ul>
+                        <div class="faq-header"></div>
+                        <div class="faq-content">
+                            <div class="faq-question">
+                                <input id="q1" type="checkbox" class="panel" />
+                                <div class="plus">+</div>
+                                <label for="q1" class="panel-title" data-i18n="faq_title_01">What is CERN?</label>
+                                <div class="panel-content" data-i18n="faq_answer_01">
+                                    CERN, the European Organization for Nuclear Research, is the world's largest particle physics laboratory. It operates the Large Hadron Collider (LHC), a massive particle accelerator used to study the
+                                    fundamental particles and forces of the universe.
+                                </div>
+                            </div>
+                            <div class="faq-question">
+                                <input id="q2" type="checkbox" class="panel" />
+                                <div class="plus">+</div>
+                                <label for="q2" class="panel-title" data-i18n="faq_title_02">Where can I study about CERN?</label>
+                                <div class="panel-content" data-i18n="faq_answer_02">
+                                    You can study about CERN through their official publications,<a href="https://home.cern/" target="_blank" class="link-style">website</a>, scientific journals,
+                                    <a href="https://github.com/cernopendata/opendata.cern.ch" target="_blank" class="link-style">GitHub</a>documentaries,
+                                    <a href="https://en.wikipedia.org/wiki/CERN" target="_blank" class="link-style">wikipedia</a>, etc.
+                                </div>
+                            </div>
+                            <div class="faq-question">
+                                <input id="q3" type="checkbox" class="panel" />
+                                <div class="plus">+</div>
+                                <label for="q3" class="panel-title" data-i18n="faq_title_03">What is the main problem that SAPHO solves?</label>
+                                <div class="panel-content" data-i18n="faq_answer_03">The main problem that SAPHO solves is the efficient design and implementation of custom processors for signal processing applications.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="thanks" class="section">
+                <p class="thanks" data-i18n="thanks_message">Thanks for Visiting</p>
+                <p class="visitor-text" data-i18n="thanks_visitor">You are visitor number:<br /></p>
+                <p class="visitor-counter"><span id="viewsCounter">0</span></p>
+                <img class="icon-undraw-thanks" src="icons/icon_undraw_astronaut.svg" alt="Thanks image first" loading="lazy" />
+                
+                                <footer class="footer">
+                                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                                        <a property="dct:title" rel="cc:attributionURL" href="https://www.nipscern.com/" data-i18n="sapho-footer">SAPHO - Scalable Architecture Processor for Hardware Optimization</a> <c data-i18n="sapho-footer_by">by</c> 
+                                        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/nipscernlab" >NIPSCERN</a> <c data-i18n="licensed-footer">is licensed under </c>
+                                        <a id="license-link" href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                                            CC BY-NC-SA 4.0
+                                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+                                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
+                                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                                        </a>
+                                    </p>
+                </footer>
 
-
+            </div>
+            <div class="popup" id="aboutPopup">
+                <div class="popup__content">
+                    <div class="content-container">
+                        <img class="icon-undraw-about" alt="Icon About" src="/icons/icon_undraw_blooming.svg" loading="lazy" />
+                        <h2 class="heading-secondary" data-i18n="modal.about.title">About.</h2>
+                        <h3 class="heading-tertiary" data-i18n="about_notice">Important &ndash; read this notice.</h3>
+                        <p class="popup__text" data-i18n="modal.about.content">All licenses and acknowledgments for third-party code can be found at:</p>
+                        <p class="popup__text"><a href="https://www.nipscern.com/license.html">license.html</a></p>
+                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="docPopup">
+                <div class="popup__content">
+                    <div class="content-container">
+                        <div class="content-container">
+                            <img class="icon-undraw-doc" alt="Icon Documentation" src="/icons/icon_undraw_code_typing.svg" loading="lazy" />
+                            <h2 class="heading-secondary" data-i18n="modal.documentation.title">Documentation.</h2>
+                            <h3 class="heading-tertiary" data-i18n="documentation_notice">Important &ndash; read this notice.</h3>
+                            <p class="popup__text" data-i18n="modal.documentation.content">You have downloaded the documentation of SAPHO. The file can be opened with the open-source PDF reader:</p>
+                            <p class="popup__text"><a href="https://www.sumatrapdfreader.org/free-pdf-reader" target="_blank">SUMATRA</a></p>
+                            <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="popup" id="dowPopup">
                 <div class="popup__content">
                     <div class="content-container">
-                        <img class="icon-undraw-dow" alt="Icon Documentation" src="/icons/icon_undraw_download.svg" loading="lazy">
+                        <img class="icon-undraw-dow" alt="Icon Documentation" src="/icons/icon_undraw_download.svg" loading="lazy" />
                         <h2 class="heading-secondary" data-i18n="modal.download.title">Download.</h2>
                         <h3 class="heading-tertiary" data-i18n="download_notice">Important &ndash; read this notice.</h3>
                         <p class="popup__text" data-i18n="modal.download.content">
-                            Thank you for downloading SAPHO. The download will start shortly. Visit the
-                            <a href="https://github.com/nipscernlab/sapho" target="_blank">GitHub</a><img class="icon-git" src="icons/icon_modal_git.svg" alt="GitHub icon" loading="lazy"> of the project for more information and download the
+                            Thank you for downloading SAPHO. The download will start shortly. Visit the<a href="https://github.com/nipscernlab/sapho" target="_blank">GitHub</a>
+                            <img class="icon-git" src="icons/icon_modal_git.svg" alt="GitHub icon" loading="lazy" /> of the project for more information and download the
                             <a href="https://www.nipscern.com/#documentation" target="_blank">documentation</a>.
                         </p>
-                        
-                        <p class="popup__text"> <a href="https://github.com/nipscernlab/sapho" target="_blank">GitHub</a></p>
-                        
-                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
+                        <p class="popup__text"><a href="https://github.com/nipscernlab/sapho" target="_blank">GitHub</a></p>
+                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy" /></a>
                     </div>
                 </div>
             </div>
-
-
             <div class="popup" id="contPopup">
                 <div class="popup__content">
                     <div class="content-container">
-                        <img class="icon-undraw-cont" alt="Icon Documentation" src="/icons/icon_undraw_questions.svg" loading="lazy">
+                        <img class="icon-undraw-cont" alt="Icon Documentation" src="/icons/icon_undraw_questions.svg" loading="lazy" />
                         <h2 class="heading-secondary" data-i18n="modal.contact.title">Contact.</h2>
                         <h3 class="heading-tertiary" data-i18n="contact_notice">Important &ndash; read this notice.</h3>
-                        <p class="popup__text" data-i18n="modal.contact.content">
-                            The email address was opened in your default application. If you have any questions, please write to: 
-                        </p>
+                        <p class="popup__text" data-i18n="modal.contact.content">The email address was opened in your default application. If you have any questions, please write to:</p>
                         <p class="popup__text"><a href="mailto:chrysthofer@nipscern.com">chrysthofer@nipscern.com</a></p>
-                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy"></a>
+                        <a href="#" class="close-button"><img src="/icons/icon_xmark.svg" alt="Close" loading="lazy" /></a>
                     </div>
                 </div>
             </div>
-   
-
         </main>
-
-        <a href="top" class="top">
-          <img src="/icons/icon_nav_wt.svg" alt="Back to top icon">
-          <span data-i18n="back_to_top">Back to Top</span>
-        </a>
-        </body>
-    </html>
+        <a href="top" class="top"><img src="/icons/icon_nav_wt.svg" alt="Back to top icon" /><span data-i18n="back_to_top">Back to Top</span></a>
+    </body>
+</html>

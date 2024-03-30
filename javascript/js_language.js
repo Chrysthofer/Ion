@@ -1,95 +1,104 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const idiomaLink = document.querySelector('a[href="#main-content"]'); // Selecionar o link específico com href="#idioma"
-    const languageSelector = document.querySelector('.language-selector'); // Selecionar o seletor de idiomas
-    let timeoutId; // Variável para armazenar o ID do timeout
+document.addEventListener("DOMContentLoaded", function () {
+    let e = document.querySelector('a[href="#language"]'),
+        t = document.querySelector(".language-selector"),
+        n;
 
-    function showLanguageOptions() {
-        clearTimeout(timeoutId); // Limpar o timeout anterior, se existir
-        languageSelector.style.display = 'block'; // Mostrar o seletor de idiomas
-        setTimeout(() => {
-            languageSelector.style.opacity = '1'; // Mudar a opacidade para 1 após o atraso para acionar a transição
-        }, 10); // Tempo mínimo para garantir que a transição seja acionada corretamente
+    function a() {
+        n = setTimeout(() => {
+            (t.style.opacity = "0"),
+                setTimeout(() => {
+                    t.style.display = "none";
+                }, 300);
+        }, 500);
     }
 
-    function hideLanguageOptions() {
-        timeoutId = setTimeout(() => {
-            languageSelector.style.opacity = '0'; // Mudar a opacidade para 0 para ocultar
+    e.addEventListener("mouseenter", function e() {
+        clearTimeout(n),
+            (t.style.display = "block"),
             setTimeout(() => {
-                languageSelector.style.display = 'none'; // Ocultar o seletor de idiomas após o atraso para garantir que a transição ocorra antes de ocultar
-            }, 300); // Tempo correspondente à duração da transição definida no CSS
-        }, 500); // Tempo de espera antes de ocultar o menu (500ms neste exemplo)
-    }
-
-    // Mostrar o menu de idiomas quando passar o mouse sobre o link "Idioma"
-    idiomaLink.addEventListener('mouseenter', showLanguageOptions);
-    // Ocultar o menu de idiomas quando o mouse sair do link "Idioma"
-    idiomaLink.addEventListener('mouseleave', hideLanguageOptions);
-    // Ocultar o menu de idiomas quando o mouse sair do seletor
-    languageSelector.addEventListener('mouseleave', hideLanguageOptions);
-    // Manter o menu de idiomas ativo enquanto o mouse estiver sobre ele
-    languageSelector.addEventListener('mouseenter', function() {
-        clearTimeout(timeoutId); // Limpar o timeout para manter o menu ativo
-    });
+                t.style.opacity = "1";
+            }, 10);
+    }),
+        e.addEventListener("mouseleave", a),
+        t.addEventListener("mouseleave", a),
+        t.addEventListener("mouseenter", function () {
+            clearTimeout(n);
+        });
 });
 
-let translations; // Declaração global da variável translations
+let translations;
 
-// Função para aplicar as traduções
-function applyTranslations(language, translations) {
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(function(element) {
-        const key = element.getAttribute('data-i18n');
-        if (translations[language] && translations[language][key]) {
-            // Verifica se o elemento é uma tag 'title' para atualizar o título da página
-            if (element.tagName.toLowerCase() === 'title') {
-                document.title = translations[language][key];
-            } else {
-                element.textContent = translations[language][key];
-            }
-        } else {
-            //console.error(`Translation not found for key '${key}' in language '${language}'.`);
-        }
-    });
-
-    // Restante do código permanece o mesmo
-
-    // Armazenar o idioma escolhido no armazenamento local
-    localStorage.setItem('preferredLanguage', language);
+function applyTranslations(e, t) {
+    let n = document.querySelectorAll("[data-i18n]");
+    n.forEach(function (n) {
+        let a = n.getAttribute("data-i18n");
+        t[e] && t[e][a] && ("title" === n.tagName.toLowerCase() ? (document.title = t[e][a]) : (n.textContent = t[e][a]));
+    }),
+        localStorage.setItem("preferredLanguage", e);
 }
 
-// Carregar as traduções do arquivo JSON
-fetch('/json/json_idioma.json')
-    .then(function(response) {
-        return response.json();
+fetch("/json/json_idioma.json")
+    .then(function (e) {
+        return e.json();
     })
-    .then(function(data) {
-        translations = data; // Atribui os dados do JSON à variável global translations
-
-        // Obter o idioma preferido armazenado
-        const storedLanguage = localStorage.getItem('preferredLanguage');
-        let language = storedLanguage || 'en'; // Usar o idioma armazenado ou inglês como padrão
-        console.log('Translations:', translations);
-
-        const supportedLanguages = Object.keys(translations);
-
-        // Verificar se o idioma armazenado é suportado
-        if (!supportedLanguages.includes(language)) {
-            language = 'en'; // Se não for suportado, usar inglês como padrão
-        }
-
-        // Aplicar as traduções ao carregar a página
-        applyTranslations(language, translations);
-
-        // Adicionar evento de clique para alternar o idioma
-        const languageOptions = document.querySelectorAll('.language-option');
-        languageOptions.forEach(function(option) {
-            option.addEventListener('click', function(event) {
-                event.preventDefault();
-                const selectedLanguage = this.getAttribute('data-lang');
-                applyTranslations(selectedLanguage, translations);
+    .then(function (e) {
+        translations = e;
+        let t = localStorage.getItem("preferredLanguage"),
+            n = t || "en",
+            a = Object.keys(translations);
+        a.includes(n) || (n = "en"), applyTranslations(n, translations);
+        let o = document.querySelectorAll(".multi-button button");
+        o.forEach(function (e) {
+            e.addEventListener("click", function (e) {
+                e.preventDefault();
+                let t = this.querySelector('img').getAttribute("data-lang");
+                applyTranslations(t, translations);
             });
         });
     })
-    .catch(function(error) {
-        console.error('Erro ao carregar as traduções:', error);
+    .catch(function (e) {
+        console.error("Erro ao carregar as traduções:", e);
     });
+
+
+// licenseLink.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    let licenseLink = document.getElementById('license-link');
+
+    // Função para alterar o link da licença com base no idioma selecionado
+    function changeLicenseLink(language) {
+        switch (language) {
+            case 'en':
+                licenseLink.href = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en';
+                break;
+            case 'pt':
+                licenseLink.href = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br';
+                break;
+            case 'fr':
+                licenseLink.href = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr';
+                break;
+            case 'no':
+                licenseLink.href = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.no';
+                break;
+            default:
+                licenseLink.href = 'http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1';
+                break;
+        }
+    }
+
+    // Adiciona um ouvinte de eventos para os botões de idioma
+    let languageButtons = document.querySelectorAll(".multi-button button");
+    languageButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            let language = this.querySelector('img').getAttribute("data-lang");
+            changeLicenseLink(language);
+        });
+    });
+
+    // Obtenha o idioma preferido do armazenamento local (se disponível) e defina o link da licença
+    let preferredLanguage = localStorage.getItem("preferredLanguage");
+    if (preferredLanguage) {
+        changeLicenseLink(preferredLanguage);
+    }
+});

@@ -63,7 +63,10 @@
     "faq_answer_02": "You can study about CERN through their official publications, website, scientific journals, GitHub documentaries, wikipedia, etc.",
     "faq_title_03": "What is the main problem that SAPHO solves?",
     "faq_answer_03": "The main problem that SAPHO solves is the efficient design and implementation of custom processors for signal processing applications.",
-    "thanks_visitor_number": "0" 
+    "thanks_visitor_number": "0",
+    "sapho-footer": "SAPHO - Scalable Architecture Processor for Hardware Optimization",
+    "sapho-footer_by": "by",
+    "licensed-footer": "Licensed Under"
   },
   "pt": {
     "site_title": "SAPHO: Processador de Arquitetura Escalável para Otimização de Hardware | Laboratório CERN",
@@ -129,7 +132,10 @@
     "faq_answer_02": "Você pode estudar sobre o CERN por meio de suas publicações oficiais, site, revistas científicas, documentários do GitHub, Wikipedia, etc.",
     "faq_title_03": "Qual é o principal problema que o SAPHO resolve?",
     "faq_answer_03": "O principal problema que o SAPHO resolve é o design e implementação eficientes de processadores personalizados para aplicações de processamento de sinais.",
-    "thanks_visitor_number": "0" 
+    "thanks_visitor_number": "0",
+    "sapho-footer": "SAPHO - Processador de Arquitetura Escalável para Otimização de Hardware",
+    "sapho-footer_by": "por",
+    "licensed-footer": "Licenciado Sob"
   },
   "fr": {
     "site_title": "SAPHO: Processeur d'Architecture Évolutive pour l'Optimisation du Matériel | Laboratoire CERN",
@@ -195,7 +201,10 @@
     "faq_answer_02": "Vous pouvez étudier sur le CERN à travers leurs publications officielles, leur site web, des revues scientifiques, des documentaires GitHub, Wikipédia, etc.",
     "faq_title_03": "Quel est le principal problème résolu par SAPHO ?",
     "faq_answer_03": "Le principal problème résolu par SAPHO est la conception et l'implémentation efficaces de processeurs personnalisés pour des applications de traitement de signaux.",
-    "thanks_visitor_number": "0" 
+    "thanks_visitor_number": "0",
+    "sapho-footer": "SAPHO - Processeur d'Architecture Évolutive pour l'Optimisation Matérielle",
+    "sapho-footer_by": "par",
+    "licensed-footer": "Sous Licence"
   },
   "no": {
     "site_title": "SAPHO: Skalerbar Arkitekturprosessor for Maskinvareoptimalisering | CERN Lab",
@@ -261,6 +270,9 @@
     "faq_answer_02": "Du kan studere om CERN gjennom deres offisielle publikasjoner, nettside, vitenskapelige tidsskrifter, GitHub-dokumentarer, Wikipedia, osv.",
     "faq_title_03": "Hva er det viktigste problemet SAPHO løser?",
     "faq_answer_03": "Det viktigste problemet SAPHO løser er effektiv design og implementering av tilpassede prosessorer for signalbehandlingsprogrammer.",
-    "thanks_visitor_number": "0" 
+    "thanks_visitor_number": "0",
+    "sapho-footer": "SAPHO - Skalerbar Arkitekturprosessor for Maskinvareoptimalisering",
+    "sapho-footer_by": "av",
+    "licensed-footer": "Lisensiert Under"
   }
 }

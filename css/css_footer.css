@@ -1,0 +1,45 @@
+.footer {
+    position: fixed; /* Alterado para fixed para garantir que o footer fique sempre visível */
+    bottom: 0;
+    width: 100%;
+    background-color: #0033a0; /* Azul mais claro */
+    padding: 15px 0;
+    text-align: center;
+    background-image: linear-gradient(135deg, #0033a0 0%, #0056b3 50%, #0033a0 100%); /* Gradiente de fundo */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #ffd700; /* Cor do texto mais escura */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave ao mudar de cor */
+}
+
+.footer a:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Adiciona margem ao redor das imagens dos ícones CC */
+.footer img {
+    margin: 0 3px;
+}
+
+/* Adiciona espaçamento interno para as imagens dos ícones CC */
+.footer a img {
+    padding: 0 3px;
+}
+
+/* Adiciona margem inferior ao footer para evitar sobreposição com o conteúdo da página */
+body {
+    margin-bottom: 80px; /* Ajuste conforme necessário */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 10px 0;
+    }
+}
