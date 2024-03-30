@@ -10,9 +10,9 @@
 
 
     <url>
-        <loc>https://www.nipscern.com/license.html</loc>
-        <changefreq>never</changefreq>
-        <priority>0.0</priority>
+        <loc>https://www.nipscern.com/licenses.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 
