@@ -1,72 +1,76 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let e = document.querySelector('a[href="#language"]'),
-        t = document.querySelector(".language-selector"),
-        n;
+    const languageLink = document.querySelector('a[href="#language"]');
+    const languageSelector = document.querySelector(".language-selector");
+    let languageTimeout;
 
-    function a() {
-        n = setTimeout(() => {
-            (t.style.opacity = "0"),
-                setTimeout(() => {
-                    t.style.display = "none";
-                }, 300);
+    function hideLanguageSelector() {
+        languageTimeout = setTimeout(() => {
+            languageSelector.style.opacity = "0";
+            setTimeout(() => {
+                languageSelector.style.display = "none";
+            }, 300);
         }, 500);
     }
 
-    e.addEventListener("mouseenter", function e() {
-        clearTimeout(n),
-            (t.style.display = "block"),
-            setTimeout(() => {
-                t.style.opacity = "1";
-            }, 10);
-    }),
-        e.addEventListener("mouseleave", a),
-        t.addEventListener("mouseleave", a),
-        t.addEventListener("mouseenter", function () {
-            clearTimeout(n);
-        });
-});
+    function showLanguageSelector() {
+        clearTimeout(languageTimeout);
+        languageSelector.style.display = "block";
+        setTimeout(() => {
+            languageSelector.style.opacity = "1";
+        }, 10);
+    }
 
-let translations;
-
-function applyTranslations(e, t) {
-    let n = document.querySelectorAll("[data-i18n]");
-    n.forEach(function (n) {
-        let a = n.getAttribute("data-i18n");
-        t[e] && t[e][a] && ("title" === n.tagName.toLowerCase() ? (document.title = t[e][a]) : (n.textContent = t[e][a]));
-    }),
-        localStorage.setItem("preferredLanguage", e);
-}
-
-fetch("/json/json_idioma.json")
-    .then(function (e) {
-        return e.json();
-    })
-    .then(function (e) {
-        translations = e;
-        let t = localStorage.getItem("preferredLanguage"),
-            n = t || "en",
-            a = Object.keys(translations);
-        a.includes(n) || (n = "en"), applyTranslations(n, translations);
-        let o = document.querySelectorAll(".multi-button button");
-        o.forEach(function (e) {
-            e.addEventListener("click", function (e) {
-                e.preventDefault();
-                let t = this.querySelector('img').getAttribute("data-lang");
-                applyTranslations(t, translations);
-            });
-        });
-    })
-    .catch(function (e) {
-        console.error("Erro ao carregar as traduções:", e);
+    languageLink.addEventListener("mouseenter", showLanguageSelector);
+    languageLink.addEventListener("mouseleave", hideLanguageSelector);
+    languageSelector.addEventListener("mouseleave", hideLanguageSelector);
+    languageSelector.addEventListener("mouseenter", function () {
+        clearTimeout(languageTimeout);
     });
 
+    let translations;
 
-// licenseLink.js
+    function applyTranslations(language, translations) {
+        const elements = document.querySelectorAll("[data-i18n]");
+        elements.forEach(function (element) {
+            const key = element.getAttribute("data-i18n");
+            if (translations[language] && translations[language][key]) {
+                if (element.tagName.toLowerCase() === "title") {
+                    document.title = translations[language][key];
+                } else {
+                    element.textContent = translations[language][key];
+                }
+            }
+        });
+        localStorage.setItem("preferredLanguage", language);
+    }
 
-document.addEventListener("DOMContentLoaded", function () {
-    let licenseLink = document.getElementById('license-link');
+    fetch("/json/json_idioma.json")
+        .then(response => response.json())
+        .then(data => {
+            translations = data;
+            let preferredLanguage = localStorage.getItem("preferredLanguage") || "en";
+            if (!Object.keys(translations).includes(preferredLanguage)) {
+                preferredLanguage = "en";
+            }
+            applyTranslations(preferredLanguage, translations);
+            const languageButtons = document.querySelectorAll(".multi-button button");
+            languageButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    const language = this.querySelector('img').getAttribute("data-lang");
+                    applyTranslations(language, translations);
+                    changeLicenseLink(language);
+                });
+            });
+            if (preferredLanguage) {
+                changeLicenseLink(preferredLanguage);
+            }
+        })
+        .catch(error => {
+            console.error("Error loading translations:", error);
+        });
 
-    // Função para alterar o link da licença com base no idioma selecionado
+    const licenseLink = document.getElementById('license-link');
+
     function changeLicenseLink(language) {
         switch (language) {
             case 'en':
@@ -87,18 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Adiciona um ouvinte de eventos para os botões de idioma
-    let languageButtons = document.querySelectorAll(".multi-button button");
+    const languageButtons = document.querySelectorAll(".multi-button button");
     languageButtons.forEach(function (button) {
         button.addEventListener("click", function () {
-            let language = this.querySelector('img').getAttribute("data-lang");
+            const language = this.querySelector('img').getAttribute("data-lang");
             changeLicenseLink(language);
         });
     });
-
-    // Obtenha o idioma preferido do armazenamento local (se disponível) e defina o link da licença
-    let preferredLanguage = localStorage.getItem("preferredLanguage");
-    if (preferredLanguage) {
-        changeLicenseLink(preferredLanguage);
-    }
 });

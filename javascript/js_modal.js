@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var e = { 
-        aboutPopup: "https://www.nipscern.com/license.html", 
+        aboutPopup: "https://www.nipscern.com/licenses.html", 
         docPopup: "https://github.com/nipscernlab/websapho/raw/main/files/documentation.pdf", 
         dowPopup: "https://github.com/nipscernlab/sapho/archive/refs/heads/main.zip", 
         contPopup: "mailto:contact@nipscern.com" 

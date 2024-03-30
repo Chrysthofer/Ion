@@ -53,6 +53,10 @@ We look forward to hearing from you and collaborating for the ongoing success of
 
 3. **What is the main problem that SAPHO solves?**
    - The main problem that SAPHO solves is the efficient design and implementation of custom processors for signal processing applications.
+   
+## License
+- Access [License CC BY-NC-SA 4.0 - SAPHO](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt)
+
 
 ## Thanks for Visiting
 
