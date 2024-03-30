@@ -1,0 +1,18 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Nips Cern",
+  "url": "https://www.nipscern.com",
+  "logo": "https://github.com/nipscernlab/websapho/blob/main/icons/icon_site_memory_128.svg",
+  "description": "Explore SAPHO, a Scalable Processor Optimized for the new CERN upgrade. Discover how SAPHO provides advanced solutions for hardware optimization.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@nipscern.com",
+    "contactType": "customer service",
+    "areaServed": "US",
+    "availableLanguage": ["*"]
+  },
+  "sameAs": [
+    "https://www.nipscern.com/"
+  ]
+}
