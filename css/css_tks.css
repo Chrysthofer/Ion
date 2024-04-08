@@ -74,9 +74,9 @@ a:hover {
 /* Seus estilos CSS existentes */
 
 .logo-link {
-    position: absolute;
+    position: relative;
+    margin-left: 90%;
     top: 2%;
-    right: 10%; /* Ajusta a posição da logo no canto superior direito com base no tamanho do elemento pai */
     z-index: 999; /* Garante que o ícone esteja acima de outros elementos */
 }
 
@@ -88,7 +88,6 @@ a:hover {
     height: 40px; /* Mantenha a proporção */
     transition: transform 0.3s ease; /* Adicione uma transição suave */
     transform-origin: center; /* Define o ponto de transformação no centro */
-    position: fixed;
 }
 
 .logo:hover {

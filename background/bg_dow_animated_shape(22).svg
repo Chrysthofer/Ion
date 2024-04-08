@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1920" height="1080" preserveAspectRatio="none" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" x="0" y="0" fill="url(&quot;#SvgjsLinearGradient1317&quot;)"></rect>
+  <defs>
+    <linearGradient x1="10.94%" y1="-19.44%" x2="89.06%" y2="119.44%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1317">
+      <stop stop-color="rgba(0, 51, 102, 1)" offset="0"></stop>
+      <stop stop-color="rgba(0, 123, 255, 1)" offset="1"></stop>
+    </linearGradient>
+  </defs>
+</svg>

@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     let r = document.querySelectorAll("nav a");
     r.forEach((t) => {
+    if (t.id !== "articles") {
         t.addEventListener("click", function (t) {
             t.preventDefault();
             let n = this.getAttribute("href").substring(1),
@@ -61,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     e.checked = !1;
                 }, 300));
         });
+        }
     }),
         window.addEventListener("scroll", function () {
             (function e(t) {
@@ -72,4 +74,5 @@ document.addEventListener("DOMContentLoaded", function () {
                     e.checked = !1;
                 }, 1e3);
         });
+    
 });
