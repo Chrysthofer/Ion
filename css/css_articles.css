@@ -15,7 +15,7 @@ body {
     left: 0; /* Alinha a esquerda do fundo com a esquerda da janela de visualização */
     width: 100%; /* Define a largura do fundo como 100% da janela de visualização */
     height: 100%; /* Define a altura do fundo como 100% da janela de visualização */
-    background-image: url('/background/bg_dow_animated_shape(22).svg'); /* Define a imagem do primeiro fundo */
+    background-image: url('/background/bg_articles_wave_grad.svg'); /* Define a imagem do primeiro fundo */
     background-size: cover; /* Cobrir todo o elemento */
     background-repeat: no-repeat; /* Não repetir a imagem */
     background-position: center; /* Centralizar a imagem */
@@ -29,7 +29,7 @@ body {
     left: 0; /* Alinha a esquerda do fundo com a esquerda da janela de visualização */
     width: 100%; /* Define a largura do fundo como 100% da janela de visualização */
     height: 100%; /* Define a altura do fundo como 100% da janela de visualização */
-    background-image: url('/background/wave-haikei-final.svg'); /* Define a imagem do primeiro fundo */
+    background-image: url('/background/bg_articles_wave.svg'); /* Define a imagem do primeiro fundo */
     background-size: cover; /* Cobrir todo o elemento */
     background-repeat: no-repeat; /* Não repetir a imagem */
     background-position: center; /* Centralizar a imagem */
