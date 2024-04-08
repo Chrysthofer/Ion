@@ -23,13 +23,20 @@ body {
 }
 
 .background-2 {
+    /* Define a posição, tamanho e z-index do primeiro fundo */
     position: fixed; /* Fixa o elemento na janela de visualização */
     top: 0; /* Alinha o topo do fundo com o topo da janela de visualização */
     left: 0; /* Alinha a esquerda do fundo com a esquerda da janela de visualização */
-    width: 100%;
-     background-image: url('/background/bg_abo_layered_waves.svg');
-    z-index: 2;
+    width: 100%; /* Define a largura do fundo como 100% da janela de visualização */
+    height: 100%; /* Define a altura do fundo como 100% da janela de visualização */
+    background-image: url('/background/wave-haikei-final.svg'); /* Define a imagem do primeiro fundo */
+    background-size: cover; /* Cobrir todo o elemento */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-position: center; /* Centralizar a imagem */
+    z-index: -1; /* Define a ordem de sobreposição do primeiro fundo */
 }
+
+
 
 header {
     text-align: center;
@@ -118,6 +125,7 @@ html {
 .footer {
    /* background-color: #0033a0;  Azul mais claro */
     bottom: 0;
+    width: 100%;
     padding: 15px 0;
     text-align: center;
     color: #fff;
@@ -125,7 +133,8 @@ html {
 
 .footer p {
     margin: 0;
-    margin-top: 10%;
+    margin-top: 10%; 
+
 }
 
 .footer a {
@@ -142,11 +151,17 @@ html {
 /* Adiciona margem ao redor das imagens dos ícones CC */
 .footer img {
     margin: 0 3px;
+    height: 22px !important;
+    margin-left: 3px;
+    vertical-align: text-bottom;
 }
 
 /* Adiciona espaçamento interno para as imagens dos ícones CC */
 .footer a img {
     padding: 0 3px;
+    height: 22px !important;
+    margin-left: 3px;
+    vertical-align: text-bottom;
 }
 
 /* Adiciona margem inferior ao footer para evitar sobreposição com o conteúdo da página */
@@ -158,6 +173,11 @@ html {
         padding: 10px 0;
     }
 }
+
+#license-link {
+    display: inline-block;
+}
+
 
 
 

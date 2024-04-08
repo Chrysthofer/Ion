@@ -37,53 +37,54 @@
         <link rel="icon" href="/icons/icon_site_memory_32.svg" type="image/svg+xml" sizes="32x32" />
         <link rel="icon" href="/icons/icon_site_memory_16.svg" type="image/svg+xml" sizes="16x16" />
         
-        <title datai18n="license_title">SAPHO: Articles</title>
+        <title datai18n="articles_title_main">SAPHO: Articles</title>
         
         <link rel="stylesheet" href="css/css_articles.css">
-</head>
-<body>
-    
-    <header>
-        <a class="logo-link" href="https://www.nipscern.com/#about"><img src="/icons/icon_site_memory_64.svg" alt="Logo" class="logo" /></a>
-        <h1 class="page-title">Articles</h1>
-        <p class="page-subtitle">Discover our latest articles</p>
-    </header>
-<div class="background-1"></div>
-    <div class="background-2"></div>
-    <section class="pdf-container">
-        <div class="pdf">
-            <embed class="pdf-embed" src="/files/documentation.pdf" type="application/pdf" />
-            <h2 class="pdf-title">Optimizations for Soft-Core Processor in FPGA for Particle Accelerators
-
-</h2>
-            <p class="pdf-description">Thesis by Lucca Oliveira Facio Viccini - Electrical Engineering, UFJF, 2023</p>
-        </div>
         
+        <script src="/javascript/js_language.js"></script>
+        <script src="/javascript/js_language_l_a.js"></script>
 
-        <div class="pdf">
-            <embed class="pdf-embed" src="/files/ENMC_2019.pdf" type="application/pdf" />
-            <h2 class="pdf-title">ENMC 2019</h2>
-            <p class="pdf-description">FPGA Implementation of an Iterative Deconvolution Method to Operate in the Trigger System of the ATLAS Experiment</p>
-        </div>
+</head>
+    <body>
+        <header>
+            <a class="logo-link" href="https://www.nipscern.com/#about"><img src="/icons/icon_site_memory_64.svg" alt="Logo" class="logo" /></a>
+            <h1 data-i18n="articles_title" class="page-title">Articles</h1>
+            <p data-i18n="articles_subtitle" class="page-subtitle">Discover our latest articles</p>
+        </header>
+        <div class="background-1"></div>
+        <div class="background-2"></div>
+        <section class="pdf-container">
+            <div class="pdf">
+                <embed class="pdf-embed" src="/files/documentation.pdf" type="application/pdf" />
+                <h2 data-i18n="articles_pdf1" class="pdf-title">Optimizing FPGA Soft-Core Processors for Particle Accelerators</h2>
+                <p data-i18n="articles_pdf1_description" class="pdf-description">Thesis by Lucca Oliveira Facio Viccini - Electrical Engineering, UFJF, 2023</p>
+            </div>
 
-        <div class="pdf">
-            <embed class="pdf-embed" src="/files/SBrT_2019.pdf" type="application/pdf" />
-            <h2 class="pdf-title">SBrT 2019</h2>
-            <p class="pdf-description">Efficient FPGA Implementation of Iterative Deconvolution Method for Energy Reconstruction in High-Energy Calorimeters</p>
-        </div>
-    </section>
-                    <footer class="footer">
-                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-                        <a property="dct:title" rel="cc:attributionURL" href="https://www.nipscern.com/" data-i18n="sapho-footer">SAPHO - Scalable Architecture Processor for Hardware Optimization</a> <c data-i18n="sapho-footer_by">by</c> 
-                        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/nipscernlab" target="_blank">NIPSCERN</a> <c data-i18n="licensed-footer">is licensed under </c>
-                        <a id="license-link" href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
-                            CC BY-NC-SA 4.0
-                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
-                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
-                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
-                            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
-                        </a>
-                    </p>
-                </footer>
-</body>
+
+            <div class="pdf">
+                <embed class="pdf-embed" src="/files/ENMC_2019.pdf" type="application/pdf" />
+                <h2 data-i18n="articles_pdf2" class="pdf-title">ENMC 2019</h2>
+                <p data-i18n="articles_pdf2_description" class="pdf-description">FPGA Implementation of an Iterative Deconvolution Method to Operate in the Trigger System of the ATLAS Experiment</p>
+            </div>
+
+            <div class="pdf">
+                <embed class="pdf-embed" src="/files/SBrT_2019.pdf" type="application/pdf" />
+                <h2 data-i18n="articles_pdf3" class="pdf-title">SBrT 2019</h2>
+                <p data-i18n="articles_pdf3_description" class="pdf-description">Efficient FPGA Implementation of Iterative Deconvolution Method for Energy Reconstruction in High-Energy Calorimeters</p>
+            </div>
+        </section>
+                <footer class="footer">
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                    <a property="dct:title" rel="cc:attributionURL" href="https://www.nipscern.com/" data-i18n="sapho_footer">SAPHO - Scalable Architecture Processor for Hardware Optimization</a> <c data-i18n="sapho_footer_by">by</c> 
+                    <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/nipscernlab" target="_blank">NIPSCERN</a> <c data-i18n="licensed_footer">is licensed under </c>
+                    <a id="license-link" href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+                        CC BY-NC-SA 4.0
+                        <img alt="Icon CC" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                        <img alt="Icon BY" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+                        <img alt="Icon NC" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
+                        <img alt="Icon SA" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                    </a>
+                </p>
+            </footer>
+    </body>
 </html>
