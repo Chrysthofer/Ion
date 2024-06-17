@@ -1,4 +1,4 @@
-# Web SAPHO
+# Ion
 [SAPHO Website](https://www.nipscern.com)
 
 ![Sapho Logo](https://github.com/nipscernlab/websapho/blob/main/icons/icon_site_memory_128.svg)
